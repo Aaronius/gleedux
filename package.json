@@ -1,8 +1,8 @@
 {
   "name": "gleedux",
   "version": "0.0.1",
-  "description": "Reactive Redux in a can",
-  "main": "main.js",
+  "description": "Bringing joy and happiness to Redux using RxJS",
+  "main": "lib/index.js",
   "author": "Aaron Hardy",
   "license": "MIT",
   "devDependencies": {
@@ -13,11 +13,11 @@
     "immutable": "^3.7.5",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "rx": "^4.0.0",
+    "rx": "*",
     "rx-react": "^0.3.0",
     "webpack": "^1.12.9"
   },
   "peerDependencies": {
-    "rx": "^4.0.0"
+    "rx": "*"
   }
 }

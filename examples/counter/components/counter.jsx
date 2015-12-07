@@ -7,7 +7,7 @@ const STEP_AMOUNT = 1;
 
 class Counter extends Component {
   getStateStream() {
-    return store.map(state => ({ counter: state.get('counter') }))
+    return store.map(state => ({ counter: state.get('counter') }));
   }
 
   componentWillMount() {
