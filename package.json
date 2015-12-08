@@ -2,9 +2,17 @@
   "name": "gleedux",
   "version": "0.0.1",
   "description": "Bringing joy and happiness to Redux using RxJS",
-  "main": "lib/index.js",
   "author": "Aaron Hardy",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aaronius/gleedux.git"
+  },
+  "scripts": {
+    "compile": "webpack",
+    "prepublish": "npm run compile"
+  },
+  "main": "dist/gleedux.js",
   "devDependencies": {
     "babel-core": "^6.3.13",
     "babel-loader": "^6.2.0",

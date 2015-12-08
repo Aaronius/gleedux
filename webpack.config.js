@@ -1,21 +1,35 @@
+var path = require('path');
+var webpack = require('webpack');
+
 module.exports = {
   entry: {
-    counter: './examples/counter/main.js'
+    'gleedux': './src/index.js',
+    'gleedux.min': './src/index.js'
   },
   output: {
-    path: __dirname,
-    filename: '[name].bundle.js'
+    path: path.join(__dirname, 'dist'),
+    filename: '[name].js',
+    libraryTarget: 'commonjs'
   },
   module: {
     loaders: [
       {
-        test: /.jsx?$/,
+        test: /.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['es2015', 'react']
+          presets: ['es2015']
         }
       }
     ]
   },
+  externals: {
+    "rx": 'commonjs rx'
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      include: /\.min\.js$/,
+      minimize: true
+    })
+  ]
 };

@@ -9,4 +9,5 @@ To view a simple counter example:
 
 1. Run `npm install`.
 1. Run `npm install webpack-dev-server -g`
+1. Run `webpack-dev-server --config webpack.config.examples.js`
 1. Open <http://localhost:8080/webpack-dev-server/examples/counter> in a browser.

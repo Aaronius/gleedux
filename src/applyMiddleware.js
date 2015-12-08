@@ -1,3 +1,4 @@
+'use strict';
 export default (...middlewares) => createStore => initialState => {
   let store = createStore(initialState);
   let onNext = store.onNext;

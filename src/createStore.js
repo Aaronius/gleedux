@@ -1,3 +1,4 @@
+'use strict';
 import Rx from 'rx';
 
 export default initialState => {
