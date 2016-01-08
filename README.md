@@ -1,7 +1,7 @@
 gleedux
 =======
 
-Bringing joy and happiness to Redux using RxJS. Helps reproduce a <a href="https://github.com/rackt/redux">Redux</a>-like workflow using <a href=https://github.com/Reactive-Extensions/RxJS">RxJS</a> data streams.
+Toying around with reproducing a <a href="https://github.com/rackt/redux">Redux</a>-like workflow using <a href=https://github.com/Reactive-Extensions/RxJS">RxJS</a> data streams.
 
 ## Examples
 
